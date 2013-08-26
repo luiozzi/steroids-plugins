@@ -11,68 +11,74 @@ You also need to make sure that your `config.platform.xml` file has the correct 
 
 
 ## Readme
-//  Cordova Calendar Plugin iOS and Android
-//
-//  Author: Felix Montanez
-//
-//  Collaborators:
-//  Michael Brooks
-//
-//  Adapted for Steroids by AppGyver
-//
-//  Notes: this is a basic plugin which creates an event to the user's local calendar. There are methods that I'm working on for fetching an event, modifying and deleting
-//  events in the calendar.
-//
-//  Usage Example: I put the code in my JS file that I'm calling the
-//  createEvent function. Declared cal as a global variable, then
-//  onDeviceReady, i declared cal = window.plugins.calendarPlugin
-//
-//  The plugin is meant to be dynamic to pass the different variables from
-//  the application to the iphone's native calendar
-//
-//  Dependencies: You will need to add the EventKit framework and the EventKitUI framework
-//
-//  Code:
-//
-//  var cal;
-//  cal = window.plugins.calendarPlugin
-//
-//  function call in Javascript:
-//
-//  createEvent : function(title,location,notes, startDate, endDate, calendarName){
-//            var title= "My Appt";
-//            var location = "Los Felix";
-//            var notes = "me testing";
-//            var startDate = "2012-01-23 09:30:00";
-//            var endDate = "2012-01-23 12:30:00";
-//            var calendarName = "Work"; // optional
-//
-//            cal.createEvent(title,location,notes,startDate,endDate, calendarName);
-//        },
-//
-//
-//  Which can also be written as:
-//
-//  function createEvent(title,location,notes, startDate, endDate, calendarName){
-//      var title= "My Appt";
-//      var location = "Los Felix";
-//      var notes = "me testing";
-//      var startDate = "2012-01-23 09:30:00";
-//      var endDate = "2012-01-23 12:30:00";
-//      var calendarName = "Work";  // optional
-//
-//      cal.createEvent(title,location,notes,startDate,endDate, calendarName);
-//  }
-//
-//  Also, there is a method "getCalendarList" which provides a list of calendar titles if you want
-//  pass in the title as the last parameter to createEvent to specify a calendar other than the default.
-//  call with:
-//     window.plugins.calendarPlugin.getCalendarList(successCallback, failureCallback);
-//
-//  The example I've written, although the function is receiving variables,
-//  for testing I declared the necessary variables. You will need to comment these out and pass
-//  your variables normally through the function call.
-//
+### Cordova Calendar Plugin iOS and Android
+
+Author: Felix Montanez
+
+Collaborators:
+Michael Brooks
+
+Adapted for Steroids by AppGyver
+
+Notes: this is a basic plugin which creates an event to the user's local calendar. There are methods that I'm working on for fetching an event, modifying and deleting
+events in the calendar.
+
+Usage Example: I put the code in my JS file that I'm calling the
+createEvent function. Declared cal as a global variable, then
+onDeviceReady, i declared cal = window.plugins.calendarPlugin
+
+The plugin is meant to be dynamic to pass the different variables from
+the application to the iphone's native calendar
+
+Code:
+
+```
+var cal;
+cal = window.plugins.calendarPlugin
+```
+
+
+function call in Javascript:
+
+```
+createEvent : function(title,location,notes, startDate, endDate, calendarName){
+          var title= "My Appt";
+          var location = "Los Felix";
+          var notes = "me testing";
+          var startDate = "2012-01-23 09:30:00";
+          var endDate = "2012-01-23 12:30:00";
+          var calendarName = "Work";  optional
+
+          cal.createEvent(title,location,notes,startDate,endDate, calendarName);
+      },
+```
+
+Which can also be written as:
+
+```
+function createEvent(title,location,notes, startDate, endDate, calendarName){
+    var title= "My Appt";
+    var location = "Los Felix";
+    var notes = "me testing";
+    var startDate = "2012-01-23 09:30:00";
+    var endDate = "2012-01-23 12:30:00";
+    var calendarName = "Work";   optional
+
+    cal.createEvent(title,location,notes,startDate,endDate, calendarName);
+}
+```
+
+Also, there is a method "getCalendarList" which provides a list of calendar titles if you want
+pass in the title as the last parameter to createEvent to specify a calendar other than the default.
+call with:
+```
+   window.plugins.calendarPlugin.getCalendarList(successCallback, failureCallback);
+```
+
+The example I've written, although the function is receiving variables,
+for testing I declared the necessary variables. You will need to comment these out and pass
+your variables normally through the function call.
+
 
 
 License
