@@ -8,7 +8,9 @@ The Facebook Connect plugin is bundled in with AppGyver Scanner, so there's no n
 You also need to make sure that your `config.ios.xml` file has the correct tag defined:
 
 `<plugin name="FacebookConnect" value="FacebookConnect" />`
-  
+
+Finally, to connect to your Facebook app, you need to build a custom Scanner app with the correct Facebook URL protocol defined.
+
 See the [Using the integrated Facebook Connect plugin guide](http://guides.appgyver.com/steroids/guides/phonegap_on_steroids/facebook-connect-plugin) for more information.
 
 
