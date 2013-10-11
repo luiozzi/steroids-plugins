@@ -9,7 +9,7 @@ From [iOS](https://github.com/phonegap/phonegap-plugins/tree/master/iOS/BarcodeS
 
 ### Configuration for Steroids
 
-The BarcodeScanner plugin is bundled in with AppGyver Scanner, so there's no need to install it separately. Simply copy the JavaScript files in the `www` directory to your project and load them in your app, e.g. with a `<script src="/plugins/barcodescanner.js"></script>" tag.
+The BarcodeScanner plugin is bundled in with AppGyver Scanner, so there's no need to install it separately. Simply copy the JavaScript files in the `www` directory to your project and load them in your app, e.g. with a `<script src="/plugins/barcodescanner.js"></script>` tag.
 
 Note that you only need to load the `barcodescanner.js` file – on Android, the `barcodescanner.android.js` file is used automatically instead. Read more at [Steroids Guides](http://guides.appgyver.com/steroids/guides/android/android-extension/).
 
