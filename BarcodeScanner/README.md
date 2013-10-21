@@ -11,7 +11,7 @@ From [iOS](https://github.com/phonegap/phonegap-plugins/tree/master/iOS/BarcodeS
 
 The BarcodeScanner plugin is bundled in with AppGyver Scanner, so there's no need to install it separately. Simply copy the JavaScript files in the `www` directory to your project and load them in your app, e.g. with a `<script src="/plugins/barcodescanner.js"></script>` tag.
 
-Note that you only need to load the `barcodescanner.js` file – on Android, the `barcodescanner.android.js` file is used automatically instead. Read more at [Steroids Guides](http://guides.appgyver.com/steroids/guides/android/android-extension/).
+Note that you only need to load the `barcodescanner.js` file – on Android, the `barcodescanner.android.js` file is used automatically instead (though you need to serve your HTML documents via localhost, otherwise the file replacement doesn't work). Read more at [Steroids Guides](http://guides.appgyver.com/steroids/guides/android/android-extension/).
 
 You also need to make sure that your `config.platform.xml` file has the correct tag defined:
 
