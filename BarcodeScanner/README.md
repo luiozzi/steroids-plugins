@@ -18,5 +18,4 @@ You also need to make sure that your `config.platform.xml` file has the correct 
 * config.android.xml:
   `<plugin name="BarcodeScanner" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>`
 * config.ios.xml:
-  `<plugin name="org.apache.cordova.barcodeScanner" value="CDVBarcodeScanner" />`
-
+  `<plugin name="com.cordova.barcodeScanner" value="CDVBarcodeScanner" />`
