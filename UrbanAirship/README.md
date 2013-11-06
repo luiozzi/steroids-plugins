@@ -4,7 +4,7 @@ This verison of the Urban Airship plugin is forked from an earlier version of [t
 
 ##Configuration in Steroids
 
-The plugin is bundled in with AppGyver Scanner for iOS, so there's no need to install it separately. Copy the JavaScript file in the `www` directory of this repository to your project and load it in your app, e.g. with a `<script src="/plugins/PushNotification.js"></script>" tag. Also make sure that your `www/config.ios.xml` file has the correct plugin tag defined:
+The plugin is bundled in with AppGyver Scanner for iOS, so there's no need to install it separately. Copy the JavaScript file in the `www` directory of this repository to your project and load it in your app, e.g. with a `<script src="/plugins/PushNotification.js"></script>` tag. Also make sure that your `www/config.ios.xml` file has the correct plugin tag defined:
 
 `<plugin name="PushNotificationPlugin" value="PushNotificationPlugin" />`
 
