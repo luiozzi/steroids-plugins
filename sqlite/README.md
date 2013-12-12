@@ -1,17 +1,19 @@
 # PhoneGap SQLitePlugin
 
-Integrated iOS plugin from https://github.com/pgsqlite/PG-SQLitePlugin-iOS
-Integrated Android plugin from https://github.com/pgsqlite/PG-SQLitePlugin-Android (experimental version modified for Steroids, not offically supported)
+Readme and usage instructions at the [official GitHub repo](https://github.com/lite4cordova/Cordova-SQLitePlugin)
 
 Forum & community support at: http://groups.google.com/group/pgsqlite
 
 ## Usage with Steroids
 
-The SQLite plugin is bundled in with AppGyver Scanner, so there's no need to install it separately. Simply copy the JavaScript files in the `www` directory to your project and load them in your app, e.g. with a `<script src="/plugins/sqliteplugin.js"></script>" tag. Note that you only need to load the `sqliteplugin.js` file – on Android, the `sqliteplugin.android.js` file is used automatically instead (though you need to serve your HTML documents via localhost, otherwise the file replacement doesn't work). Read more at [Steroids Guides](http://guides.appgyver.com/steroids/guides/android/android-extension/).
+The SQLite plugin is bundled in with AppGyver Scanner, so there's no need to install it separately. Cordova also automatically loads the JavaScript file and creates a `window.sqlitePlugin` object in all WebViews.
 
-You also need to make sure that your `config.platform.xml` file has the correct tag defined:
+## Resources
 
-* Android:
-  `<plugin name="SQLitePlugin" value="com.phonegap.plugin.sqlitePlugin.SQLitePlugin"/>`
-* iOS:
-  `<plugin name="SQLitePlugin" value="SQLitePlugin" />`
+There's an [SQLite Guide](http://guides.appgyver.com/steroids/guides/phonegap_on_steroids/prepopulated-sqlite/) available on using a local prepopulated database.
+
+You can also generate a CRUD scaffold that can be configured to use the SQLite plugin by typing
+
+    $ steroids generate ng-sql-scaffold
+
+in your Steroids project directory.
